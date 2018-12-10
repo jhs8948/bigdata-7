@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>chart created with Dataplanet | Dataplanet</title>
+		<meta name="description" content="chart created using Dataplanet live editor" />
+		
+		<!-- Dataplanet javascript sources -->
+		<script type="text/javascript" src="http://dplive.dataplanet.co.kr//lib/3/dataplanet.js"></script>
+		<script type="text/javascript" src="http://dplive.dataplanet.co.kr/lib/3/serial.js"></script>
+		<script type="text/javascript" src="http://dplive.dataplanet.co.kr//lib/3/themes/dark.js"></script>
+		
+
+		<!-- Dataplanet javascript code -->
+		<script type="text/javascript">
+			Dataplanet.makeChart("chartdiv",
+				{
+					"type": "serial",
+					"categoryField": "category",
+					"plotAreaFillColors": "#000000",
+					"trendLines": [],
+					"startDuration": 1,
+					"backgroundColor": "#FFFFFF",
+					"color": "#7A7777",
+					"fontFamily": "",
+					"fontSize": 9,
+					"handDrawScatter": 0,
+					"handDrawThickness": 0,
+					"theme": "dark",
+					"categoryAxis": {
+						"gridPosition": "start",
+						"tickPosition": "시작점",
+						"axisAlpha": 0.12,
+						"axisThickness": 3,
+						"fontSize": 17,
+						"tickLength": 0
+					},
+					"chartCursor": {
+						"enabled": true,
+						"tabIndex": 3
+					},
+					"graphs": [
+						{
+							"balloonText": "[[title]] of [[category]]:[[value]]",
+							"bullet": "round",
+							"fillColors": "#FFFFFF",
+							"id": "AmGraph-1",
+							"title": "graph 1",
+							"valueField": "민간소비"
+						},
+						{
+							"balloonText": "[[title]] of [[category]]:[[value]]",
+							"bullet": "square",
+							"id": "AmGraph-2",
+							"title": "graph 2",
+							"valueField": "column-2"
+						},
+						{
+							"id": "AmGraph-3",
+							"title": "graph 3",
+							"type": "column",
+							"valueField": "민간소비",
+							"visibleInLegend": false
+						}
+					],
+					"guides": [],
+					"valueAxes": [
+						{
+							"minimum": -1,
+							"id": "ValueAxis-1",
+							"title": "",
+							"titleBold": false,
+							"titleFontSize": 1,
+							"titleRotation": 0,
+							"gridAlpha": 0,
+							"gridThickness": 4,
+							"fontSize": 15,
+							"labelOffset": 4,
+							"axisAlpha": 0.31,
+							"axisThickness": 4,
+							"tickLength": -1
+						}
+					],
+					"balloon": {},
+					"titles": [
+						{
+							"alpha": 0.47,
+							"bold": false,
+							"color": "#FFFFFF",
+							"id": "Title-1",
+							"size": 17,
+							"text": "민간소비증감율"
+						}
+					],
+					"dataProvider": [
+						{
+							"category": "2008",
+							"민간소비": "1.4"
+						},
+						{
+							"category": "2009",
+							"민간소비": "0.2"
+						},
+						{
+							"category": "2010",
+							"민간소비": "4.4"
+						},
+						{
+							"category": "2011",
+							"민간소비": "2.9"
+						},
+						{
+							"category": "2012",
+							"민간소비": "2.9"
+						},
+						{
+							"category": "2013",
+							"민간소비": "1.9"
+						},
+						{
+							"category": "2014",
+							"민간소비": "1.7"
+						},
+						{
+							"category": "2015",
+							"민간소비": "2.2"
+						},
+						{
+							"category": "2016",
+							"민간소비": "2.5"
+						},
+						{
+							"category": "2018*",
+							"민간소비": "2.7"
+						},
+						{
+							"category": "2019*",
+							"민간소비": "2.7"
+						}
+					]
+				}
+			);
+		</script>
+	</head>
+	<body>
+		<div id="chartdiv" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>
+	</body>
+</html>
